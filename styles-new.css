@@ -535,31 +535,3 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.1rem 24px; /* было 1rem сверху и снизу, теперь 0.5rem */
 }
 
-@media (max-width: 768px) {
-    /* В мобильном виде блок «О нашей студии» становится колонкой */
-    .about .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    /* Текстовый блок на всю ширину */
-    .about-text {
-        width: 100%;
-    }
-
-    /* Фото преподавателя под текстом, увеличено до 80% экрана */
-    .about-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-
-    .about-image img {
-        width: 80vw;
-        max-width: 300px;
-        height: auto;
-    }
-}
